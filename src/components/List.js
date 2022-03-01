@@ -5,7 +5,7 @@ function List() {
   return (
     <div className="list">
       <h2>List</h2>
-      {numbersList}
+      {numbersList.map((el, idx)=><div key={idx}>{el}</div>)}
     </div>
   );
 }
